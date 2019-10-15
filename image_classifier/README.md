@@ -2,6 +2,7 @@
 
 Project code for Udacity's Data Scientist Nanodegree program. In this project, I first developed the code for an image classifier built with PyTorch, then you I converted it into a command line application.
 
+
 ## Data
 
 The model will be training using 102 different types of flowers, where there ~20 images per flower to train on.  Then you will use your trained classifier to see if you can predict the type for new images of the flowers. 
@@ -16,6 +17,7 @@ curl https://s3.amazonaws.com/content.udacity-data.com/nd089/flower_data.tar.gz 
 
 
 ## Pre-requisites
+
 The Code is written in Python 3.6.9. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade it using pip.
 
 Additional Packages that are required are: 
@@ -37,7 +39,8 @@ Additional Packages that are required are:
 
 ## Command Line Application
 
-__Train a new network on a data set with__ `train.py`
+### Train
+Train a new network on a data set with `train.py`
 
 Basic usage: ```python train.py data_directory```
 Prints out training loss, validation loss, and validation accuracy as the network trains
@@ -48,7 +51,10 @@ Options:
 - Set hyperparameters: ```python train.py data_dir --learning_rate 0.01 --hidden_units 512 --epochs 20```
 - Use GPU for training: ```python train.py data_dir --gpu```
 
-__Predict flower name from an image with__ `predict.py` along with the probability of that name. That is, you'll pass in a single image /path/to/image and return the flower name and class probability.
+
+### Predict
+
+Predict flower name from an image with `predict.py` along with the probability of that name. That is, you'll pass in a single image /path/to/image and return the flower name and class probability.
 
 Basic usage: ```python predict.py /path/to/image checkpoint```
 
