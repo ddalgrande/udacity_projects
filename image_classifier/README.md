@@ -6,9 +6,9 @@ Project code for Udacity's Data Scientist Nanodegree program. In this project, I
 
 The model will be training using 102 different types of flowers, where there ~20 images per flower to train on.  Then you will use your trained classifier to see if you can predict the type for new images of the flowers. 
 
-Image categories can be found in [cat_to_name.json]() and  flower images can be downloaded in the gziped tar file [flower_data.tar.gz](https://s3.amazonaws.com/content.udacity-data.com/nd089/flower_data.tar.gz) from Udacity.
+Image categories can be found in [cat_to_name.json]() and  flower images can be downloaded here [flower_data.tar.gz](https://s3.amazonaws.com/content.udacity-data.com/nd089/flower_data.tar.gz).
 
-Get flower images:
+Download flower images:
 ```bash
 mkdir -p flowers && cd flowers
 curl https://s3.amazonaws.com/content.udacity-data.com/nd089/flower_data.tar.gz | tar xz
@@ -37,7 +37,7 @@ Additional Packages that are required are:
 
 ## Command Line Application
 
-__Train__ a new network on a data set with `train.py`__
+__Train a new network on a data set with__ `train.py`
 
 Basic usage: ```python train.py data_directory```
 Prints out training loss, validation loss, and validation accuracy as the network trains
@@ -48,11 +48,11 @@ Options:
 - Set hyperparameters: ```python train.py data_dir --learning_rate 0.01 --hidden_units 512 --epochs 20```
 - Use GPU for training: ```python train.py data_dir --gpu```
 
-__Predict flower name from an image with `predict.py` along with the probability of that name. That is, you'll pass in a single image /path/to/image and return the flower name and class probability.__
+__Predict flower name from an image with__ `predict.py` along with the probability of that name. That is, you'll pass in a single image /path/to/image and return the flower name and class probability.
 
 Basic usage: ```python predict.py /path/to/image checkpoint```
 
 Options:
--- Return top KK most likely classes: ```python predict.py input checkpoint --top_k 3```
--- Use a mapping of categories to real names: ```python predict.py input checkpoint --category_names cat_to_name.json```
--- Use GPU for inference: ```python predict.py input checkpoint --gpur
+- Return top KK most likely classes: ```python predict.py input checkpoint --top_k 3```
+- Use a mapping of categories to real names: ```python predict.py input checkpoint --category_names cat_to_name.json```
+- Use GPU for inference: ```python predict.py input checkpoint --gpur
