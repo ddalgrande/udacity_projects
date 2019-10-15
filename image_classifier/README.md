@@ -62,4 +62,4 @@ Basic usage: ```python predict.py /path/to/image checkpoint```
 Options:
 - Return top KK most likely classes: ```python predict.py input checkpoint --top_k 3```
 - Use a mapping of categories to real names: ```python predict.py input checkpoint --category_names cat_to_name.json```
-- Use GPU for inference: ```python predict.py input checkpoint --gpur
+- Use GPU for inference: ```python predict.py input checkpoint --gpur```
