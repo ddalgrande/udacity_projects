@@ -1,6 +1,6 @@
 # Image Classification Project
 
-Project code for Udacity's Data Scientist Nanodegree program. In this project, I first developed the code for an image classifier built with PyTorch, then you I converted it into a command line application.
+Project code for Udacity's Data Scientist Nanodegree program. In this project, I first developed the code for an image classifier built with PyTorch, then I converted it into a command line application.
 
 
 ## Data
@@ -18,7 +18,7 @@ curl https://s3.amazonaws.com/content.udacity-data.com/nd089/flower_data.tar.gz 
 
 ## Pre-requisites
 
-The Code is written in Python 3.6.9. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade it using pip.
+The Code is written in Python 3.6.9. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version you can upgrade it using pip.
 
 Additional Packages that are required are:
 
