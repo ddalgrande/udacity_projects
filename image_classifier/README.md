@@ -5,7 +5,7 @@ Project code for Udacity's Data Scientist Nanodegree program. In this project, I
 
 ## Data
 
-The model will be training using 102 different types of flowers, where there ~20 images per flower to train on.  Then you will use your trained classifier to see if you can predict the type for new images of the flowers. 
+The model was trained using 102 different types of flowers, where there are ~20 images per flower to train on.
 
 Image categories can be found in [cat_to_name.json]() and  flower images can be downloaded here [flower_data.tar.gz](https://s3.amazonaws.com/content.udacity-data.com/nd089/flower_data.tar.gz).
 
@@ -20,7 +20,8 @@ curl https://s3.amazonaws.com/content.udacity-data.com/nd089/flower_data.tar.gz 
 
 The Code is written in Python 3.6.9. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade it using pip.
 
-Additional Packages that are required are: 
+Additional Packages that are required are:
+
 - [Numpy](http://www.numpy.org/)
 - [Pandas](https://pandas.pydata.org/)
 - [MatplotLib](https://matplotlib.org/)
@@ -31,9 +32,9 @@ Additional Packages that are required are:
 
 ### Project assets:
 
-- `image_classifier_project.ipynb` Jupyter Notebook including the main project
+- `image_classifier_project.ipynb` Jupyter Notebook including the main analysis
 - `function_utils.py` script including functions used in train.py and predict.py
-- `train.py` command line tool to train a new network on a data set using transfer learning
+- `train.py` command line tool to train a new neural network using transfer learning
 - `predict.py` command line tool to predict the name of a flower - the script will also print probabilities 
 
 
